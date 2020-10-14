@@ -1,0 +1,55 @@
+"C:\Program Files\Java\jdk-14.0.2\bin\java.exe" -Didea.launcher.port=61506 "-Didea.launcher.bin.path=H:\IntelliJ IDEA Community Edition\IntelliJ IDEA Community Edition 2018.3.3\bin" -Dfile.encoding=UTF-8 -classpath "D:\GitHub\Java-basic\out\production\java-basic;H:\IntelliJ IDEA Community Edition\IntelliJ IDEA Community Edition 2018.3.3\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMainV2 ExpressionEvaluation
+
+----------------------------------------------------------
+Expression:10*20+((262+85)+(89-11))
+
+----------------------------------------------------------
+input	digit	operator		output
+
+1	1
+0	10
+*	0	*		10
+2	2	*		10
+0	20	*		10
++	0	+		1020*
+(	0	+(		1020*
+(	0	+((		1020*
+2	2	+((		1020*
+6	26	+((		1020*
+2	262	+((		1020*
++	0	+((+		1020*262
+8	8	+((+		1020*262
+5	85	+((+		1020*262
+)	0	+(		1020*26285+
++	0	+(+		1020*26285+
+(	0	+(+(		1020*26285+
+8	8	+(+(		1020*26285+
+9	89	+(+(		1020*26285+
+-	0	+(+(-		1020*26285+89
+1	1	+(+(-		1020*26285+89
+1	11	+(+(-		1020*26285+89
+)	0	+(+		1020*26285+8911-
+)	0	+		1020*26285+8911-+
+----------------------------------------------------------
+
+postfix: 10 20 * 262 85 + 89 11 - + +
+
+----------------------------------------------------------
+
+Element		Stack
+
+
+10			10
+20			10	20
+*			200
+262			200	262
+85			200	262	85
++			200	347
+89			200	347	89
+11			200	347	89	11
+-			200	347	78
++			200	425
++			625
+ans:625
+
+Process finished with exit code 0
