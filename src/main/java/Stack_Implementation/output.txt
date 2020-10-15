@@ -1,0 +1,14 @@
+"C:\Program Files\Java\jdk-14.0.2\bin\java.exe" -Didea.launcher.port=54429 "-Didea.launcher.bin.path=H:\IntelliJ IDEA Community Edition\IntelliJ IDEA Community Edition 2018.3.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\lenovo\github\java-basic\out\production\classes;H:\IntelliJ IDEA Community Edition\IntelliJ IDEA Community Edition 2018.3.3\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMainV2 Stack_Implementation.StackMain
+Elements in stack:
+	2	3	4	5	12	9
+position of 4 in stack:2
+
+the peek/top most element in stack is: 9
+
+Elements in stack:
+	2	3	4	5	12	9
+top most element9is popped
+
+Elements in stack:
+	2	3	4	5	12
+Process finished with exit code 0
